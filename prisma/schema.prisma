@@ -7,7 +7,7 @@ generator client {
 
 datasource sqlite {
   provider = "sqlite"
-  url      = 'file:../analytia.db'
+  url      = env("DATABASE_URL")
 }
 
 model User {
